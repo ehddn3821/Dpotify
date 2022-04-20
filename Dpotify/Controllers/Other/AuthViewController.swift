@@ -6,24 +6,48 @@
 //
 
 import UIKit
+import WebKit
+import SnapKit
 
-class AuthViewController: UIViewController {
+class AuthViewController: BaseViewController {
+    
+    public var completionHandler: ((Bool) -> Void)?
+    
+    private let webView: WKWebView = {
+        let prefs = WKPreferences()
+        prefs.javaScriptEnabled = true
+        let config = WKWebViewConfiguration()
+        config.preferences = prefs
+        let wv = WKWebView(frame: .zero, configuration: config)
+        return wv
+    }()
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        webView.navigationDelegate = self
+        
+        guard let url = AuthManager.shared.signInURL else { return }
+        webView.load(URLRequest(url: url))
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func setupUI() {
+        title = "Sign In"
+        view.backgroundColor = .systemBackground
+        
+        view.addSubview(webView)
+        webView.snp.makeConstraints { make in
+            make.edges.equalToSuperview()
+        }
     }
-    */
+}
 
+extension AuthViewController: WKNavigationDelegate {
+    func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
+        guard let url = webView.url else { return }
+        
+        guard let code = URLComponents(string: url.absoluteString)?.queryItems?.first(where: { $0.name == "code" })?.value else { return }
+        
+        print("Code: \(code)")
+    }
 }

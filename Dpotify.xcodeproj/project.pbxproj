@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22A6BA27B354256CA2053174 /* Pods_Dpotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1DD8B3BDC83386294B257AB /* Pods_Dpotify.framework */; };
+		2395785AA85A4C2113568ABD /* Pods_Dpotify_DpotifyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09E1D0FDA65176D913C982E1 /* Pods_Dpotify_DpotifyUITests.framework */; };
+		35615D0D281030D6006ED171 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35615D0C281030D6006ED171 /* BaseViewController.swift */; };
+		35615D1028103106006ED171 /* OSLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35615D0F28103106006ED171 /* OSLog.swift */; };
+		35615D1228103111006ED171 /* PreViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35615D1128103111006ED171 /* PreViews.swift */; };
 		35B6E6D8280D8A1B00ECB9F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B6E6D7280D8A1B00ECB9F5 /* AppDelegate.swift */; };
 		35B6E6DA280D8A1B00ECB9F5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B6E6D9280D8A1B00ECB9F5 /* SceneDelegate.swift */; };
 		35B6E6DC280D8A1B00ECB9F5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B6E6DB280D8A1B00ECB9F5 /* HomeViewController.swift */; };
@@ -32,6 +37,7 @@
 		35B6E72C280D954700ECB9F5 /* AudioTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B6E72B280D954700ECB9F5 /* AudioTrack.swift */; };
 		35B6E72E280D955D00ECB9F5 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B6E72D280D955D00ECB9F5 /* Artist.swift */; };
 		35B6E730280D957000ECB9F5 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B6E72F280D957000ECB9F5 /* UserProfile.swift */; };
+		FD6852FD15D851446D469FE6 /* Pods_DpotifyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C670F7BC8350E9FFB3BA47A2 /* Pods_DpotifyTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +58,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09E1D0FDA65176D913C982E1 /* Pods_Dpotify_DpotifyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dpotify_DpotifyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D97CF7B2CE789678F4E12DA /* Pods-Dpotify-DpotifyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dpotify-DpotifyUITests.debug.xcconfig"; path = "Target Support Files/Pods-Dpotify-DpotifyUITests/Pods-Dpotify-DpotifyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		35615D0C281030D6006ED171 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		35615D0F28103106006ED171 /* OSLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSLog.swift; sourceTree = "<group>"; };
+		35615D1128103111006ED171 /* PreViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreViews.swift; sourceTree = "<group>"; };
 		35B6E6D4280D8A1B00ECB9F5 /* Dpotify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dpotify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35B6E6D7280D8A1B00ECB9F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35B6E6D9280D8A1B00ECB9F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +92,13 @@
 		35B6E72B280D954700ECB9F5 /* AudioTrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioTrack.swift; sourceTree = "<group>"; };
 		35B6E72D280D955D00ECB9F5 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		35B6E72F280D957000ECB9F5 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		53CF6D600CC26A69AA1EDD5E /* Pods-Dpotify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dpotify.debug.xcconfig"; path = "Target Support Files/Pods-Dpotify/Pods-Dpotify.debug.xcconfig"; sourceTree = "<group>"; };
+		9D90C17A3309F378AFA619DB /* Pods-Dpotify-DpotifyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dpotify-DpotifyUITests.release.xcconfig"; path = "Target Support Files/Pods-Dpotify-DpotifyUITests/Pods-Dpotify-DpotifyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C670F7BC8350E9FFB3BA47A2 /* Pods_DpotifyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DpotifyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1DD8B3BDC83386294B257AB /* Pods_Dpotify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dpotify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D49ED80935953472D82435CE /* Pods-DpotifyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DpotifyTests.release.xcconfig"; path = "Target Support Files/Pods-DpotifyTests/Pods-DpotifyTests.release.xcconfig"; sourceTree = "<group>"; };
+		D757A9056F53392B39940187 /* Pods-DpotifyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DpotifyTests.debug.xcconfig"; path = "Target Support Files/Pods-DpotifyTests/Pods-DpotifyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DEB25C4A3344CC18A86F3367 /* Pods-Dpotify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dpotify.release.xcconfig"; path = "Target Support Files/Pods-Dpotify/Pods-Dpotify.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22A6BA27B354256CA2053174 /* Pods_Dpotify.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD6852FD15D851446D469FE6 /* Pods_DpotifyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,12 +122,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2395785AA85A4C2113568ABD /* Pods_Dpotify_DpotifyUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		35615D0B281030C3006ED171 /* Customs */ = {
+			isa = PBXGroup;
+			children = (
+				35615D0C281030D6006ED171 /* BaseViewController.swift */,
+			);
+			path = Customs;
+			sourceTree = "<group>";
+		};
+		35615D0E281030E5006ED171 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				35615D0F28103106006ED171 /* OSLog.swift */,
+				35615D1128103111006ED171 /* PreViews.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		35615D15281035CE006ED171 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		35B6E6CB280D8A1B00ECB9F5 = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +160,8 @@
 				35B6E6ED280D8A1F00ECB9F5 /* DpotifyTests */,
 				35B6E6F7280D8A1F00ECB9F5 /* DpotifyUITests */,
 				35B6E6D5280D8A1B00ECB9F5 /* Products */,
+				3C44BBEC58BA8133B62E05FB /* Pods */,
+				7917F6B2D44C80743681ED11 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,6 +184,9 @@
 				35B6E709280D8A8E00ECB9F5 /* ViewModels */,
 				35B6E708280D8A8800ECB9F5 /* Managers */,
 				35B6E707280D8A6900ECB9F5 /* Resource */,
+				35615D0B281030C3006ED171 /* Customs */,
+				35615D0E281030E5006ED171 /* Utils */,
+				35615D15281035CE006ED171 /* Extensions */,
 				35B6E6E5280D8A1E00ECB9F5 /* Info.plist */,
 			);
 			path = Dpotify;
@@ -239,6 +289,29 @@
 			path = Other;
 			sourceTree = "<group>";
 		};
+		3C44BBEC58BA8133B62E05FB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				53CF6D600CC26A69AA1EDD5E /* Pods-Dpotify.debug.xcconfig */,
+				DEB25C4A3344CC18A86F3367 /* Pods-Dpotify.release.xcconfig */,
+				0D97CF7B2CE789678F4E12DA /* Pods-Dpotify-DpotifyUITests.debug.xcconfig */,
+				9D90C17A3309F378AFA619DB /* Pods-Dpotify-DpotifyUITests.release.xcconfig */,
+				D757A9056F53392B39940187 /* Pods-DpotifyTests.debug.xcconfig */,
+				D49ED80935953472D82435CE /* Pods-DpotifyTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7917F6B2D44C80743681ED11 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D1DD8B3BDC83386294B257AB /* Pods_Dpotify.framework */,
+				09E1D0FDA65176D913C982E1 /* Pods_Dpotify_DpotifyUITests.framework */,
+				C670F7BC8350E9FFB3BA47A2 /* Pods_DpotifyTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -246,9 +319,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 35B6E6FE280D8A1F00ECB9F5 /* Build configuration list for PBXNativeTarget "Dpotify" */;
 			buildPhases = (
+				E465BB3FB75C61A50C2BC9D0 /* [CP] Check Pods Manifest.lock */,
 				35B6E6D0280D8A1B00ECB9F5 /* Sources */,
 				35B6E6D1280D8A1B00ECB9F5 /* Frameworks */,
 				35B6E6D2280D8A1B00ECB9F5 /* Resources */,
+				A0DA58FC22BA3C7EA37BB147 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -263,6 +338,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 35B6E701280D8A1F00ECB9F5 /* Build configuration list for PBXNativeTarget "DpotifyTests" */;
 			buildPhases = (
+				F3565A1B480CCA0026F58BBD /* [CP] Check Pods Manifest.lock */,
 				35B6E6E6280D8A1F00ECB9F5 /* Sources */,
 				35B6E6E7280D8A1F00ECB9F5 /* Frameworks */,
 				35B6E6E8280D8A1F00ECB9F5 /* Resources */,
@@ -281,9 +357,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 35B6E704280D8A1F00ECB9F5 /* Build configuration list for PBXNativeTarget "DpotifyUITests" */;
 			buildPhases = (
+				5E75F363A1A207A91C564780 /* [CP] Check Pods Manifest.lock */,
 				35B6E6F0280D8A1F00ECB9F5 /* Sources */,
 				35B6E6F1280D8A1F00ECB9F5 /* Frameworks */,
 				35B6E6F2280D8A1F00ECB9F5 /* Resources */,
+				E627782C8E2FB40D022A131D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -364,6 +442,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5E75F363A1A207A91C564780 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Dpotify-DpotifyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0DA58FC22BA3C7EA37BB147 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dpotify/Pods-Dpotify-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dpotify/Pods-Dpotify-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Dpotify/Pods-Dpotify-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E465BB3FB75C61A50C2BC9D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Dpotify-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E627782C8E2FB40D022A131D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dpotify-DpotifyUITests/Pods-Dpotify-DpotifyUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dpotify-DpotifyUITests/Pods-Dpotify-DpotifyUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Dpotify-DpotifyUITests/Pods-Dpotify-DpotifyUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3565A1B480CCA0026F58BBD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DpotifyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		35B6E6D0280D8A1B00ECB9F5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -373,7 +554,9 @@
 				35B6E72A280D908100ECB9F5 /* Playlist.swift in Sources */,
 				35B6E724280D902800ECB9F5 /* AuthManager.swift in Sources */,
 				35B6E718280D8F6200ECB9F5 /* WelcomeViewController.swift in Sources */,
+				35615D1028103106006ED171 /* OSLog.swift in Sources */,
 				35B6E71C280D8F9D00ECB9F5 /* ProfileViewController.swift in Sources */,
+				35615D0D281030D6006ED171 /* BaseViewController.swift in Sources */,
 				35B6E70E280D8C6900ECB9F5 /* TabBarViewController.swift in Sources */,
 				35B6E6DC280D8A1B00ECB9F5 /* HomeViewController.swift in Sources */,
 				35B6E728280D905200ECB9F5 /* HapticsManager.swift in Sources */,
@@ -386,6 +569,7 @@
 				35B6E72E280D955D00ECB9F5 /* Artist.swift in Sources */,
 				35B6E6DA280D8A1B00ECB9F5 /* SceneDelegate.swift in Sources */,
 				35B6E71E280D8FAF00ECB9F5 /* PlayerViewController.swift in Sources */,
+				35615D1228103111006ED171 /* PreViews.swift in Sources */,
 				35B6E722280D8FE500ECB9F5 /* SearchResultViewController.swift in Sources */,
 				35B6E726280D903800ECB9F5 /* APICaller.swift in Sources */,
 				35B6E71A280D8F7E00ECB9F5 /* SettingsViewController.swift in Sources */,
@@ -552,6 +736,7 @@
 		};
 		35B6E6FF280D8A1F00ECB9F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53CF6D600CC26A69AA1EDD5E /* Pods-Dpotify.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -580,6 +765,7 @@
 		};
 		35B6E700280D8A1F00ECB9F5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEB25C4A3344CC18A86F3367 /* Pods-Dpotify.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -608,6 +794,7 @@
 		};
 		35B6E702280D8A1F00ECB9F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D757A9056F53392B39940187 /* Pods-DpotifyTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -628,6 +815,7 @@
 		};
 		35B6E703280D8A1F00ECB9F5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D49ED80935953472D82435CE /* Pods-DpotifyTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -648,6 +836,7 @@
 		};
 		35B6E705280D8A1F00ECB9F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D97CF7B2CE789678F4E12DA /* Pods-Dpotify-DpotifyUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -666,6 +855,7 @@
 		};
 		35B6E706280D8A1F00ECB9F5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D90C17A3309F378AFA619DB /* Pods-Dpotify-DpotifyUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
