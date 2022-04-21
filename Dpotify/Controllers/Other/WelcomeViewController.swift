@@ -44,29 +44,29 @@ class WelcomeViewController: BaseViewController {
     
     func buttonActions() {
         signInButton.rx.tap.bind { [weak self] _ in
+            guard let self = self else { return}
+            
             let vc = AuthViewController()
-            vc.completionHandler = { [weak self] success in
-                DispatchQueue.main.async {
-                    self?.handleSignIn(success: success)
-                }
-            }
+            
+            vc.isSignInSuccess
+                .observe(on: MainScheduler.instance)
+                .subscribe(onNext: { isSuccess in
+                    if isSuccess {
+                        let mainAppTabBarVC = TabBarViewController()
+                        mainAppTabBarVC.modalPresentationStyle = .fullScreen
+                        self.present(mainAppTabBarVC, animated: true)
+                    }
+                    else {
+                        let alert = UIAlertController(title: "Oops",
+                                                      message: "Something went wrong when signing in.",
+                                                      preferredStyle: .alert)
+                        alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel))
+                        self.present(alert, animated: true)
+                    }
+                }).disposed(by: self.disposeBag)
+            
             vc.navigationItem.largeTitleDisplayMode = .never
-            self?.navigationController?.pushViewController(vc, animated: true)
+            self.navigationController?.pushViewController(vc, animated: true)
         }.disposed(by: disposeBag)
-    }
-    
-    private func handleSignIn(success: Bool) {
-        guard success else {
-            let alert = UIAlertController(title: "Oops",
-                                          message: "Something went wrong when signing in.",
-                                          preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel))
-            present(alert, animated: true)
-            return
-        }
-        
-        let mainAppTabBarVC = TabBarViewController()
-        mainAppTabBarVC.modalPresentationStyle = .fullScreen
-        present(mainAppTabBarVC, animated: true)
     }
 }

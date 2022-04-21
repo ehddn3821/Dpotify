@@ -6,8 +6,10 @@
 //
 
 import Foundation
+import RxCocoa
 
 final class AuthManager {
+    
     static let shared = AuthManager()
     
     struct Constants {
@@ -15,6 +17,8 @@ final class AuthManager {
         static let clientSecret = "9d6f2aacc28f4c76bf11f1e2fed37666"
         static let tokenAPIURL = "https://accounts.spotify.com/api/token"
     }
+    
+    let isExchangeCode = PublishRelay<Bool>()
     
     public var signInURL: URL? {
         let scope = "user-read-private"
@@ -51,7 +55,7 @@ final class AuthManager {
         return currentDate.addingTimeInterval(fiveMinutes) >= tokenExpirationDate
     }
     
-    public func exchangeCodeForToken(code: String, completion: @escaping ((Bool) -> Void)) {
+    public func exchangeCodeForToken(code: String) {
         guard let url = URL(string: Constants.tokenAPIURL) else { return }
         
         var components = URLComponents()
@@ -69,26 +73,27 @@ final class AuthManager {
         let data = basicToken.data(using: .utf8)
         guard let base64String = data?.base64EncodedString() else {
             print("Failure to get base64")
-            completion(false)
+            isExchangeCode.accept(false)
             return
         }
         
         request.setValue("Basic \(base64String)", forHTTPHeaderField: "Authorization")
         
         let task = URLSession.shared.dataTask(with: request) { [weak self] data, _, error in
+            guard let self = self else { return }
             guard let data = data, error == nil else {
-                completion(false)
+                self.isExchangeCode.accept(false)
                 return
             }
             
             do {
                 let result = try JSONDecoder().decode(AuthResponse.self, from: data)
-                self?.cacheToken(result: result)
-                completion(true)
+                self.cacheToken(result: result)
+                self.isExchangeCode.accept(true)
             }
             catch {
                 print(error.localizedDescription)
-                completion(false)
+                self.isExchangeCode.accept(false)
             }
         }
         task.resume()

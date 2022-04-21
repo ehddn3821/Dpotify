@@ -8,10 +8,13 @@
 import UIKit
 import WebKit
 import SnapKit
+import RxCocoa
+import RxSwift
 
 class AuthViewController: BaseViewController {
     
-    public var completionHandler: ((Bool) -> Void)?
+    let disposeBag = DisposeBag()
+    let isSignInSuccess = PublishRelay<Bool>()
     
     private let webView: WKWebView = {
         let prefs = WKPreferences()
@@ -46,15 +49,16 @@ extension AuthViewController: WKNavigationDelegate {
     func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
         guard let url = webView.url else { return }
         
+        AuthManager.shared.isExchangeCode
+            .distinctUntilChanged()
+            .observe(on: MainScheduler.instance)
+            .subscribe(onNext: { [weak self] isSuccess in
+                self?.navigationController?.popViewController(animated: true)
+                self?.isSignInSuccess.accept(isSuccess)
+            }).disposed(by: disposeBag)
+        
         guard let code = URLComponents(string: url.absoluteString)?.queryItems?.first(where: { $0.name == "code" })?.value else { return }
         
-        print("Code: \(code)")
-        
-        AuthManager.shared.exchangeCodeForToken(code: code) { [weak self] success in
-            DispatchQueue.main.async {
-                self?.navigationController?.popViewController(animated: true)
-                self?.completionHandler?(success)
-            }
-        }
+        AuthManager.shared.exchangeCodeForToken(code: code)
     }
 }
